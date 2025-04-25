@@ -1,0 +1,95 @@
+#index.html
+
+const responses = {
+  'hi': 'Namaste bhai! Kya haal-chaal? 😎',
+  'hello': 'Arre, hello-hello! Bol, kya baat hai? 🙌',
+  'help': 'Bhai, bol kya chakkar hai? Teri full help karunga! 💪',
+  'bye': 'Chal, fir milte hain! Apna khayal rakh, boss! 😎',
+  'how are you': 'Main toh ekdum jhakaas! Tu bata, kaisa hai? 😄',
+  'services': 'Humare yahan Reading Therapy aur Yoga ka jugadu scene hai! Kya try karega? 🧘‍♂️📚',
+  'reading': 'Reading Therapy mein motivational quotes aur kitabein hain, dil ko full boost karne ke liye! 😇 Ek quote sunau kya?',
+  'yoga': 'Yoga se body aur mind dono ekdum chill! Ek session book kare kya, bhai? 🧘‍♂️',
+  'thanks': 'Arre, shukriya bhai! Dil se dil tak! 😍',
+  'kya kar rahe ho': 'Bas yahan digital duniya mein tera wait kar raha hoon! Tu kya kar raha? 😜',
+  'mood': 'Mood kaisa hai, bhai? Thodi si motivation du ya yoga karwa du? 😎',
+  'joke': 'Ek joke sunau? Yeh le: Why did the tomato turn red? Because it saw the salad dressing! 😂 Aur ek sunau?',
+  'bored': 'Arre, bore ho raha? Chal, ek motivational quote ya yoga pose suggest karu? 😇',
+  'love': 'Pyaar-vyaar ki baatein? Dil se dil tak, bhai! 😍 Koi special baat bata!',
+  'good morning': 'Suprabhat bhai! Naya din, nayi vibe! Kya plan hai aaj? 🌞',
+  'good night': 'Shubh raatri, bhai! Accha sapna dekh, aur kal fir baat karte hain! 😴',
+  'mood kaisa hai': 'Bhai, mera mood toh hamesha top-gear! 😎 Tera mood kya bol raha hai aaj?',
+  'reading mein kya mood hai': 'Arre, reading ka mood ekdum inspirational hai! Ek motivational quote ya book suggestion du? 😇 Misal ke taur pe: "Safalta usse milti hai jo sapne dekhta hai aur unhe sach karne ke liye mehnat karta hai." Aur chahiye?',
+  'aaj kya padhu': 'Aaj ke liye ek mast suggestion: Try "The Power of Now" ya koi desi motivational book like "You Can Win". Mood boost guaranteed! 📚 Aur koi specific vibe chahiye?',
+  'motivation de': 'Bhai, yeh le ekdum kadak quote: "Zindagi ek race hai, aur tu uska champion! Bas apne sapno ke peeche daudte reh!" 😎 Aur ek du?',
+  'chill karna hai': 'Chill mode on? Ek yoga pose try kar: "Shavasana" – bas let ja aur saans le, full relax! 😴 Ya thodi reading karu suggestion?',
+  'thodi si baat kar': 'Arre, bhai, dil se dil tak baat karte hain! Tu bol, aaj kya scene hai – kaam, pyaar, ya bas masti? 😜',
+  'hansi de': 'Yeh le, ek desi maza: Ek baar ek bandar ne WhatsApp pe status daala – "Feeling on top of the world!" Sabne comment kiya: "Bhai, ped se utar ja!" 😂 Aur sunau?'
+};
+
+
+
+#yoga 
+const responses = {
+  'hi': 'Namaste bhai! Kya haal-chaal? 😎',
+  'hello': 'Arre, hello-hello! Bol, kya baat hai? 🙌',
+  'help': 'Bhai, bol kya chakkar hai? Teri full help karunga! 💪',
+  'bye': 'Chal, fir milte hain! Apna khayal rakh, boss! 😎',
+  'how are you': 'Main toh ekdum jhakaas! Tu bata, kaisa hai? 😄',
+  'services': 'Humare yahan Reading Therapy aur Yoga ka jugadu scene hai! Yoga asanas dekh: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/sitting-standing-recumbent-yoga-poses" target="_blank">More Asanas</a> 🧘‍♂️📚',
+  'reading': 'Reading Therapy mein motivational quotes aur kitabein hain, dil ko boost karne ke liye! Ek mast book try kar: <a href="https://example.com/reading" target="_blank">Best Books</a> 😇',
+  'yoga': 'Yoga se body aur mind dono chill! Ek session try kar: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/sitting-standing-recumbent-yoga-poses" target="_blank">Explore Asanas</a> ya video dekh: <a href="https://www.youtube.com/embed/s2NQhpFGIOg" target="_blank">Yoga Video</a> 🧘‍♂️',
+  'thanks': 'Arre, shukriya bhai! Dil se dil tak! 😍',
+  'kya kar rahe ho': 'Bas yahan digital duniya mein tera wait kar raha hoon! Tu kya kar raha? 😜',
+  'mood': 'Mood kaisa hai, bhai? Thodi si motivation du ya yoga karwa du? 😎',
+  'joke': 'Ek joke sunau? Yeh le: Why did the tomato turn red? Because it saw the salad dressing! 😂 Aur ek sunau?',
+  'bored': 'Arre, bore ho raha? Ek yoga asana try kar: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/standing-backward-bend" target="_blank">Ardha Chakrasana</a> 😇',
+  'love': 'Pyaar-vyaar ki baatein? Dil se dil tak, bhai! 😍 Koi special baat bata!',
+  'good morning': 'Suprabhat bhai! Naya din, nayi vibe! Kya plan hai aaj? 🌞',
+  'good night': 'Shubh raatri, bhai! Accha sapna dekh, aur kal fir baat karte hain! 😴',
+  'mood kaisa hai': 'Bhai, mera mood toh hamesha top-gear! 😎 Tera mood kya bol raha hai aaj?',
+  'reading mein kya mood hai': 'Reading ka mood ekdum inspirational hai! Quote: "Safalta usse milti hai jo sapne dekhta hai aur mehnat karta hai." Books yahan dekh: <a href="https://example.com/motivational-books" target="_blank">Motivational Reads</a> 😇',
+  'aaj kya padhu': 'Aaj ke liye suggestion: "The Power of Now" ya "You Can Win". Buy karna hai? Tap: <a href="https://example.com/book-store" target="_blank">Get Books</a> 📚',
+  'motivation de': 'Bhai, yeh le kadak quote: "Zindagi ek race hai, tu uska champion!" Aur motivation chahiye? Yeh dekh: <a href="https://example.com/motivation" target="_blank">More Quotes</a> 😎',
+  'chill karna hai': 'Chill mode on? Ek yoga pose try kar: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/reverse-prayer-pose" target="_blank">Paschim Namaskarasana</a> ya video dekh: <a href="https://www.youtube.com/embed/g_tea8ZNk5A" target="_blank">Yoga Tutorial</a> 😴',
+  'thodi si baat kar': 'Arre, bhai, dil se dil tak baat karte hain! Tu bol, aaj kya scene hai – kaam, pyaar, ya bas masti? 😜',
+  'hansi de': 'Yeh le desi maza: Ek bandar ne status daala – "Feeling on top!" Sab bole: "Ped se utar ja!" 😂 Aur jokes yahan: <a href="https://example.com/jokes" target="_blank">More Jokes</a>',
+  'yoga asana': 'Bhai, yahan dekho mast yoga asanas: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/standing-backward-bend" target="_blank">Ardha Chakrasana</a>, <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/warrior-pose-virbhadrasana" target="_blank">Virabhadrasana</a>, <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/reverse-prayer-pose" target="_blank">Paschim Namaskarasana</a>, <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/sitting-half-spinal-twist-ardha-matsyendrasana" target="_blank">Ardha Matsyendrasana</a>, <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/standing-forward-bend" target="_blank">Prasarita Padahastasana</a>. Sab dekhna hai? Tap: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/sitting-standing-recumbent-yoga-poses" target="_blank">More Asanas</a> 🧘‍♂️',
+  'yoga video': 'Yoga videos chahiye? Yeh lo: <a href="https://www.youtube.com/embed/s2NQhpFGIOg" target="_blank">Video 1</a>, <a href="https://www.youtube.com/embed/g_tea8ZNk5A" target="_blank">Video 2</a>, <a href="https://www.youtube.com/embed/c8hjhRqIwHE" target="_blank">Video 3</a>, <a href="https://www.youtube.com/embed/brjAjq4zEIE" target="_blank">Video 4</a>, <a href="https://www.youtube.com/embed/0XBcrjkkwQo" target="_blank">Video 5</a>, <a href="https://www.youtube.com/embed/7Vqv5SmSKHY" target="_blank">Video 6</a>. Enjoy karo! 🎥🧘‍♂️',
+  'ardha chakrasana': 'Ardha Chakrasana se torso stretch hota hai aur shoulders strong! Details yahan: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/standing-backward-bend" target="_blank">Read More</a> ya video dekh: <a href="https://www.youtube.com/embed/s2NQhpFGIOg" target="_blank">Tutorial</a> 🧘‍♂️',
+  'virabhadrasana': 'Virabhadrasana se stamina badhta hai, arms strong hote hain! Padho: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/warrior-pose-virbhadrasana" target="_blank">Read More</a> ya video: <a href="https://www.youtube.com/embed/g_tea8ZNk5A" target="_blank">Tutorial</a> 💪',
+  'paschim namaskarasana': 'Paschim Namaskarasana se shoulders aur back khulte hain! Details: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/reverse-prayer-pose" target="_blank">Read More</a> ya video: <a href="https://www.youtube.com/embed/c8hjhRqIwHE" target="_blank">Tutorial</a> 😇',
+  'ardha matsyendrasana': 'Ardha Matsyendrasana spine ko flexible banata hai! Padho: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/sitting-half-spinal-twist-ardha-matsyendrasana" target="_blank">Read More</a> ya video: <a href="https://www.youtube.com/embed/brjAjq4zEIE" target="_blank">Tutorial</a> 🧘‍♂️',
+  'prasarita padahastasana': 'Prasarita Padahastasana se legs aur spine strong hote hain! Details: <a href="https://www.artofliving.org/in-en/yoga/yoga-poses/standing-forward-bend" target="_blank">Read More</a> ya video: <a href="https://www.youtube.com/embed/0XBcrjkkwQo" target="_blank">Tutorial</a> 💪'
+};
+
+
+#reading
+
+const responses = {
+  'hi': 'Namaste bhai! Kya haal-chaal? 😎',
+  'hello': 'Arre, hello-hello! Bol, kya baat hai? 🙌',
+  'help': 'Bhai, bol kya chakkar hai? Teri full help karunga! 💪',
+  'bye': 'Chal, fir milte hain! Apna khayal rakh, boss! 😎',
+  'how are you': 'Main toh ekdum jhakaas! Tu bata, kaisa hai? 😄',
+  'services': 'Humare yahan Reading Therapy ka jugadu scene hai! Books aur articles dekh: <a href="https://example.com/reading" target="_blank">Check Kar</a> 📚',
+  'reading': 'Reading Therapy mein motivational quotes, articles, aur kitabein hain, dil ko boost karne ke liye! Start kar: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">Inspirational Article</a> ya <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834" target="_blank">Atomic Habits</a> 😇',
+  'thanks': 'Arre, shukriya bhai! Dil se dil tak! 😍',
+  'kya kar rahe ho': 'Bas yahan digital duniya mein tera wait kar raha hoon! Tu kya kar raha? 😜',
+  'mood': 'Mood kaisa hai, bhai? Thodi si motivation du ya reading suggest karu? 😎',
+  'joke': 'Ek joke sunau? Yeh le: Why did the tomato turn red? Because it saw the salad dressing! 😂 Aur ek sunau?',
+  'bored': 'Arre, bore ho raha? Ek motivational article padh: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">Yeh Padho</a> 😇',
+  'love': 'Pyaar-vyaar ki baatein? Dil se dil tak, bhai! 😍 Koi special baat bata!',
+  'good morning': 'Suprabhat bhai! Naya din, nayi vibe! Kya plan hai aaj? 🌞',
+  'good night': 'Shubh raatri, bhai! Accha sapna dekh, aur kal fir baat karte hain! 😴',
+  'mood kaisa hai': 'Bhai, mera mood toh hamesha top-gear! 😎 Tera mood kya bol raha hai aaj?',
+  'reading mein kya mood hai': 'Reading ka mood ekdum inspirational hai! Yeh quote sun: "Life isn’t about finding yourself. Life is about creating yourself." Aur articles yahan dekh: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">Inspirational Story</a> 😇',
+  'aaj kya padhu': 'Aaj ke liye suggestion: "Atomic Habits" by James Clear. Buy karna hai? Tap: <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834" target="_blank">Get Book</a> 📚',
+  'motivation de': 'Bhai, yeh le kadak quote: "Our greatest glory is not in never falling, but in rising every time we fall." Aur motivation chahiye? Yeh padh: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">Inspirational Article</a> 😎',
+  'chill karna hai': 'Chill mode on? Ek stress-relieving quote sun: "You can’t control the wind, but you can adjust your sails." Article padh: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">Yeh Dekh</a> 😴',
+  'thodi si baat kar': 'Arre, bhai, dil se dil tak baat karte hain! Tu bol, aaj kya scene hai – kaam, pyaar, ya bas masti? 😜',
+  'hansi de': 'Yeh le desi maza: Ek bandar ne status daala – "Feeling on top!" Sab bole: "Ped se utar ja!" 😂 Aur jokes yahan: <a href="https://example.com/jokes" target="_blank">More Jokes</a>',
+  'quotes': 'Motivational quotes chahiye? Yeh lo: <br>1. "Life isn’t about finding yourself. Life is about creating yourself."<br>2. "A mistake that makes you humble is better than an achievement that makes you arrogant."<br>3. "You can’t control the wind, but you can adjust your sails."<br>Aur quotes ke liye article padh: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">Yeh Padho</a> 😇',
+  'articles': 'Inspirational article padhna hai? Yeh lo: <a href="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" target="_blank">The Best Way to Refresh Mind, Body, Soul</a> 📖',
+  'book summaries': 'Book summaries chahiye? Yeh dekho: <br>1. <a href="https://www.samuelthomasdavies.com/book-summaries/self-help/atomic-habits/" target="_blank">Atomic Habits</a><br>2. <a href="https://jamesclear.com/book-summaries/the-subtle-art-of-not-giving-a-fck" target="_blank">The Subtle Art of Not Giving a F*ck</a><br>3. <a href="https://wizbuskout.com/think-like-a-monk-summary/" target="_blank">Think Like a Monk</a> 📚',
+  'books': 'Mast books padhna hai? Yeh lo suggestions: <br>1. <a href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834" target="_blank">Atomic Habits</a><br>2. <a href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268" target="_blank">The Psychology of Money</a><br>3. <a href="https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549" target="_blank">The Subtle Art of Not Giving a F*ck</a><br>4. <a href="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X" target="_blank">Ikigai</a><br>5. <a href="https://www.amazon.in/Think-Like-Monk-Jay-Shetty/dp/0008386595" target="_blank">Think Like a Monk</a><br>6. <a href="https://www.amazon.in/dp/0007272618" target="_blank">How To Talk To Anyone</a><br>7. <a href="https://www.amazon.in/Rich-Dad-Poor-Middle-Updates/dp/1612680194" target="_blank">Rich Dad Poor Dad</a><br>8. <a href="https://www.amazon.in/ReWork-Change-Way-Work-Forever/dp/0091929784" target="_blank">Rework</a> 📚'
+};
